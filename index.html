@@ -2,7 +2,7 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
-  <title>Vergessene NS Architektur</title>
+  <title>Unsichtbare NS Architektur</title>
   <style>
     body {
       margin: 0;
@@ -65,14 +65,14 @@
 </head>
 <body>
   <div id="header">
-    <p>Vergessene NS Architektur</p>
+    <p>Unsichtbare NS Architektur</p>
   <p>Ausstellung in der Stube, Barfüßerstraße 8, ab 23.Januar 2026</p>
     <p></p>
-  <p>Betrachten Sie das Mannschaftshaus der Somme-Kaserne als 3D Modell in Augmented Reality:</p>
+  <p>Betrachten Sie das KZ Allach als 3D Modell in Augmented Reality:</p>
   </div>
 
   <model-viewer
-    src="Manhaus.glb"
+    src="KZAllach.glb"
     alt="3D-Modell von Mannschaftshaus"
     auto-rotate
     camera-controls
@@ -86,13 +86,8 @@
 
   <script type="module" src="model-viewer.min.js"></script>
 
-  <script>
-    const modelViewer = document.querySelector("model-viewer");
-    const arButton = document.getElementById("ar-button");
-
-    arButton.addEventListener("click", () => {
-      modelViewer.enterAR();
-    });
-  </script>
+  <script type="module"
+  src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+</script>
 </body>
 </html>
